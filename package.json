@@ -50,11 +50,11 @@
   },
   "scripts": {
     "build": "npx tsc",
-    "prepare": "npm run build && npx esbuild src/cli.ts --bundle --platform=node --outfile=build/i18n-ai-translate.js --banner:js='#!/usr/bin/env node'",
+    "prepare": "npm run build && npx esbuild src/cli.ts --bundle --platform=node --outfile=build/i18n-ai-translate.js --banner:js=\"#!/usr/bin/env node\"",
     "i18n-ai-translate": "npm run build && node build/cli.js",
     "clean": "rm -r build/ && rm tsconfig.tsbuildinfo",
     "clean-build": "npm run clean && npm run build",
-    "prettier": "prettier --write '**/*.{js,ts}'",
+    "prettier": "prettier --write \"**/*.{js,ts}\"",
     "lint": "npx eslint --cache src/ --ext .js,.ts",
     "lint-fix": "npx eslint --fix --cache src/ --ext .js,.ts",
     "test": "jest"
